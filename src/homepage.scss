@@ -1,0 +1,179 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+
+/* SECTION 1 */
+.section1{
+    width: 100%;
+    background-image: url("images/background-accroche.jpg");
+    background-size: cover;
+    color: #FAFAFA;
+
+    .topNav{
+        width: 100%;
+        padding: 43px 49px;
+        box-sizing: border-box;
+
+        h2{
+            font-size: 48px;
+            font-weight: 600;
+            float: right;
+            margin: 26px 0 0 0;
+        }
+
+        ul{
+            display: none;
+        }
+    }
+
+    .accroche{
+        width: 100%;
+        padding: 0 30px 41px 30px;
+        box-sizing: border-box;
+
+        > img{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1, h2{
+            margin: 0;
+        }
+
+        h1{
+            font-size: 26px;
+            font-weight: 900;
+            margin-bottom: 9px;
+        }
+
+        h2{
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 9px;
+        }
+
+        .storesIcons{
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                width: 48%;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+/* SECTION 2 */
+.section2{
+    .part1, .part2{
+        padding: 30px;
+    }
+
+    .part1{
+        .mockup2{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h3{
+            font-size: 26px;
+            font-weight: 900;
+            margin: 13px 0 0 0;
+        }
+
+        p{
+            font-size: 17px;
+            font-weight: 500;
+            margin: 9px 0 0 0;
+        }
+    }
+
+    .illustration1{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .part2{
+        .mockup3{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h3{
+            font-size: 26px;
+            font-weight: 900;
+            margin: 13px 0 0 0; 
+        }
+
+        p{
+            font-size: 17px;
+            font-weight: 500;
+            margin: 9px 0 0 0;
+        }
+    }
+
+    .part3{
+        background-color: #E82C8D;
+        color: white;
+        padding: 0 30px;
+
+        .mockup4{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h3{
+            font-size: 36px;
+            font-weight: 900;
+            margin: 26px 0 0 0;
+        }
+
+        p{
+            font-size: 11px;
+            font-weight: 500;
+            margin: 6px 0 0 0;
+        }
+
+        form{
+            margin: 22px 0 0 0;
+            width: 100%;
+            display: flex;
+
+            input{
+                width: 70%;
+                border: none;
+                border-radius: 30px;
+                height: 40px;
+                padding: 7px 12px;
+                box-sizing: border-box;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            button{
+                width: 40px;
+                height: 40px;
+                border: 0;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                position: relative;
+                margin-left: 5px;
+                background-color: white;
+
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 40%;
+                }
+            }
+        }
+    }
+}

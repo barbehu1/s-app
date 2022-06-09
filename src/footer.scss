@@ -1,0 +1,93 @@
+footer{
+    width: 100%;
+    background: #FFFFFF;
+    color: #E82C8D;
+    box-sizing: border-box;
+    padding: 38px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .circle1{
+    position: absolute;
+    width: 289px;
+    height: 289px;
+    left: -100px;
+    top: -16%;
+}
+
+footer .logoDiv{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+footer .downloadButtonDiv{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer .downloadButtonDiv button{
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #E82C8D;
+    border: none;
+    color: white;
+    width: 314px;
+    height: 102px;
+    border-radius: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 390px){
+    footer .downloadButtonDiv button{
+        font-size: 7vw;
+    }
+}
+
+footer .divProjet, footer .divApplication, footer .divLiens{
+    float: left;
+    margin: 33px 33px 0 0;
+}
+
+footer .divLiens{
+    margin-bottom: 33px;
+}
+
+footer .divLiens a{
+    text-decoration: none;
+    color: #E82C8D;
+}
+
+footer .circle2{
+    position: absolute;
+    transform: rotate(180deg);
+    width: 289px;
+    height: 289px;
+    right: -100px;
+    bottom: -100px;
+}
+
+footer h3{
+    font-weight: 800;
+    margin: 0;
+    font-size: 22px;
+}
+
+footer ul{
+    text-transform: capitalize;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li{
+    font-size: 22px;
+}
