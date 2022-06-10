@@ -71,7 +71,55 @@ function HomepageMobile() {
 function HomepageDesktop() {
     return(
         <>
-
+            <section class="section1">
+                <nav class="topNav">
+                    <img src="images/logo-s-app.png" alt="S'APP"/>
+                    <h2>S'APP</h2>
+                    <ul>
+                        <li><a href="mailto:hugo.barbe@edu.devinci.fr">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="accroche">
+                    <img src="images/mockup1.png" alt="Cherchez de nouveaux vêtements"/>
+                    <h1>Organisez facilement votre dressing.</h1>
+                    <h2>S’APP vous propose de nouvelles tenues chaque jours !</h2>
+                    <div class="storesIcons">
+                        <img src="images/google-play.png" class="googlePlayStoreIcon" alt="Google Play Store"/>
+                        <img src="images/app-store.png" class="appStoreIcon" alt="App Store"/>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <div class="part1">
+                    <img src="images/mockup2.png" class="mockup2" alt="Votre tenue d'aujourd'hui"/>
+                    <h3>Des vêtements pour <br />chaque temps</h3>
+                    <p>Soleil, pluie ou vent ?<br />Je me sappe tout le temps</p>
+                    <img class="illustration1" src="images/illustration2.svg" alt="Flèche d'illustration1"/>
+                </div>
+                <img class="cercleIllustration1" src="images/circle.svg" alt="Cercle d'illustration"/>
+                <div class="part2">
+                    <div class="part2Left">
+                        <h3>Retrouvez tous vos <br />vêtements dans <br />votre dressing</h3>
+                        <p>Ajouter, catégoriser et trier vos <br />vêtements afin de créer de <br />nouvelles tenues</p>
+                    </div>
+                    <div class="part2Right">
+                        <img src="images/mockup3.png" alt="Votre dressing"/>
+                    </div>
+                </div>
+                <img class="secondeIllustrationFleche" src="images/illustration2.svg" alt="Seconde illustration de flèche"/>
+                <img class="cercleIllustration2" src="images/circle.svg" alt="Cercle d'illustration"/>
+                <div class="part3">
+                    <img src="images/mockup4.png" alt="Prenez vos vêtements en photo"/>
+                    <h3>S'APP arrive prochainement</h3>
+                    <p>Envie de gagner du temps ?<br />Découvrez notre application très prochainement</p>
+                    <form action="" method="post">
+                        <input type="email" name="email" placeholder="ton@mail.com"/>
+                        <button type="submit">
+                            <img src="images/send-icon.png" alt="Icone d'envoi"/>
+                        </button>
+                    </form>
+                </div>
+            </section>
         </>
     );
 }
