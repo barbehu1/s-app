@@ -94,8 +94,10 @@ html, body {
     }
 
     .illustration1{
-        width: 70%;
-        margin: 0 auto;
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+        box-sizing: border-box;
     }
 
     .part2{
@@ -120,58 +122,78 @@ html, body {
     .part3{
         background-color: #E82C8D;
         color: white;
-        padding: 0 30px;
+        width: 200%;
+        transform: translate(-25%);
+        border-radius: 600px 600px 0 0;
+        margin-top: 270px;
+        text-align: center;
+        height: 700px;
 
-        .mockup4{
-            width: 100%;
+        .part3intern{
+            width: 100vw;
+            position: relative;
+            left: 25%;
+            padding: 0 30px;
             box-sizing: border-box;
-        }
+            text-align: left;
+            top: -200px;
 
-        h3{
-            font-size: 36px;
-            font-weight: 900;
-            margin: 26px 0 0 0;
-        }
-
-        p{
-            font-size: 11px;
-            font-weight: 500;
-            margin: 6px 0 0 0;
-        }
-
-        form{
-            margin: 22px 0 0 0;
-            width: 100%;
-            display: flex;
-
-            input{
-                width: 70%;
-                border: none;
-                border-radius: 30px;
-                height: 40px;
-                padding: 7px 12px;
+            .mockup4{
+                width: 100%;
                 box-sizing: border-box;
-                font-size: 20px;
-                font-weight: 500;
             }
+    
+            h3{
+                box-sizing: border-box;
+                font-size: 36px;
+                font-weight: 900;
+                margin: 26px 0 0 0;
+            }
+    
+            p{
+                font-size: 11px;
+                font-weight: 500;
+                margin: 6px 0 0 0;
+            }
+    
+            form{
+                margin: 22px 0 0 0;
+                width: 100%;
+                display: flex;
+    
+                input{
+                    width: 80%;
+                    border: none;
+                    border-radius: 30px;
+                    height: 40px;
+                    padding: 7px 12px;
+                    box-sizing: border-box;
+                    font-size: 20px;
+                    font-weight: 500;
 
-            button{
-                width: 40px;
-                height: 40px;
-                border: 0;
-                border-radius: 30px;
-                padding: 5px;
-                text-align: center;
-                position: relative;
-                margin-left: 5px;
-                background-color: white;
-
-                img{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 40%;
+                    &::placeholder{
+                        font-family: 'Nunito', sans-serif;
+                    }
+                }
+    
+                button{
+                    width: 40px;
+                    height: 40px;
+                    border: 0;
+                    border-radius: 30px;
+                    padding: 5px;
+                    text-align: center;
+                    position: relative;
+                    margin-left: 5px;
+                    background-color: white;
+    
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 40%;
+                    }
                 }
             }
         }

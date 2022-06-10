@@ -1,11 +1,19 @@
+// SCSS
 import './footer.scss';
+
+// Modules
+import {useMediaQuery} from '@react-hook/media-query';
+
+// Images
+import logoSapp from './images/logo-s-app.png';
+import cercle from './images/circle.svg';
 
 function FooterMobile() {
     return(
         <footer>
-            <img class="circle1" src="images/circle.svg" alt="Cercle d'illustration"/>
+            <img class="circle1" src={cercle} alt="Cercle d'illustration"/>
             <div class="logoDiv">
-                <img class="logo" src="images/logo-s-app.png" alt="S'APP"/>
+                <img class="logo" src={logoSapp} alt="S'APP"/>
             </div>
             <div class="downloadButtonDiv">
                 <button>Télécharger</button>
@@ -31,7 +39,7 @@ function FooterMobile() {
                     <li>Mentions légales</li>
                 </ul>
             </div>
-            <img class="circle2" src="images/circle.svg" alt="Cercle d'illustration"/>
+            <img class="circle2" src={cercle} alt="Cercle d'illustration"/>
         </footer>
     );
 }
@@ -39,9 +47,9 @@ function FooterMobile() {
 function FooterDesktop() {
     return(
         <footer>
-            <img class="circle1" src="images/circle.svg" alt="Cercle d'illustration"/>
+            <img class="circle1" src={cercle} alt="Cercle d'illustration"/>
             <div class="logoDiv">
-                <img class="logo" src="images/logo-s-app.png" alt="S'APP"/>
+                <img class="logo" src={logoSapp} alt="S'APP"/>
             </div>
             <div class="downloadButtonDiv">
                 <button>Télécharger</button>
@@ -67,7 +75,7 @@ function FooterDesktop() {
                     <li>Mentions légales</li>
                 </ul>
             </div>
-            <img class="circle2" src="images/circle.svg" alt="Cercle d'illustration"/>
+            <img class="circle2" src={cercle} alt="Cercle d'illustration"/>
         </footer>
     );
 }

@@ -10,7 +10,7 @@ import mockup1 from './images/mockup1.png';
 import googlePlay from './images/google-play.png';
 import appStore from './images/app-store.png';
 import mockup2 from './images/mockup2.png';
-import illustration1 from './images/illustration1.svg';
+import fleche from './images/fleche.svg';
 import cercle from './images/circle.svg';
 import mockup3 from './images/mockup3.png';
 import illustration2 from './images/illustration2.svg';
@@ -44,22 +44,24 @@ function HomepageMobile() {
                     <h3>Des vêtements pour <br />chaque temps</h3>
                     <p>Soleil, pluie ou vent ?<br />Je me sappe tout le temps</p>
                 </div>
-                <img className="illustration1" src={illustration1} alt="Flèche d'illustration1"/>
+                <img className="illustration1" src={fleche} alt="Flèche d'illustration1"/>
                 <div className="part2">
                     <img src={mockup3} className="mockup3" alt="Votre dressing"/>
                     <h3>Retrouvez tous vos <br />vêtements dans <br />votre dressing</h3>
                     <p>Ajouter, catégoriser et trier vos <br />vêtements afin de créer de <br />nouvelles tenues</p>
                 </div>
                 <div className="part3">
-                    <img src={mockup4} className="mockup4" alt="Prenez vos vêtements en photo"/>
-                    <h3>S'APP arrive prochainement</h3>
-                    <p>Envie de gagner du temps ?<br />Découvrez notre application très prochainement</p>
-                    <form action="" method="post">
-                        <input type="email" name="email" placeholder="ton@mail.com"/>
-                        <button type="submit">
-                            <img src={sendIcon} alt="Icone d'envoi"/>
-                        </button>
-                    </form>
+                    <div className="part3intern">
+                        <img src={mockup4} className="mockup4" alt="Prenez vos vêtements en photo"/>
+                        <h3>S'APP arrive prochainement</h3>
+                        <p>Envie de gagner du temps ?<br />Découvrez notre application très prochainement</p>
+                        <form action="" method="post">
+                            <input type="email" name="email" placeholder="ton@mail.com"/>
+                            <button type="submit">
+                                <img src={sendIcon} alt="Icone d'envoi"/>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </>
