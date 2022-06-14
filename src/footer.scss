@@ -1,93 +1,168 @@
-footer{
-    width: 100%;
-    background: #FFFFFF;
-    color: #E82C8D;
-    box-sizing: border-box;
-    padding: 38px;
-    position: relative;
-    overflow: hidden;
-}
+/* MOBILE */
+@media screen and (max-width:1023px){
+    footer{
+        width: 100%;
+        background: #FFFFFF;
+        color: #E82C8D;
+        box-sizing: border-box;
+        padding: 38px;
+        position: relative;
+        overflow: hidden;
 
-footer .circle1{
-    position: absolute;
-    width: 289px;
-    height: 289px;
-    left: -100px;
-    top: -16%;
-}
+        .circle1{
+            position: absolute;
+            width: 289px;
+            height: 289px;
+            left: -100px;
+            top: -16%;
+        }
 
-footer .logoDiv{
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    margin-bottom: 43px;
-}
+        .logoDiv{
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            margin-bottom: 43px;
+        }
 
-footer .downloadButtonDiv{
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-}
+        .downloadButtonDiv{
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
 
-footer .downloadButtonDiv button{
-    max-width: 100%;
-    box-sizing: border-box;
-    background-color: #E82C8D;
-    border: none;
-    color: white;
-    width: 314px;
-    height: 102px;
-    border-radius: 30px;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: 'Nunito', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-}
+            button{
+                max-width: 100%;
+                box-sizing: border-box;
+                background-color: #E82C8D;
+                border: none;
+                color: white;
+                width: 314px;
+                height: 102px;
+                border-radius: 30px;
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-family: 'Nunito', sans-serif;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-@media screen and (max-width: 390px){
-    footer .downloadButtonDiv button{
-        font-size: 7vw;
+            @media screen and (max-width: 390px){
+                button{
+                    font-size: 7vw;
+                }
+            }
+        }
+
+        .divProjet, .divApplication, .divLiens{
+            float: left;
+            margin: 33px 33px 0 0;
+        }
+
+        .divLiens{
+            margin-bottom: 33px;
+
+            a{
+                text-decoration: none;
+                color: #E82C8D;
+            }
+        }
+
+        .circle2{
+            position: absolute;
+            transform: rotate(180deg);
+            width: 289px;
+            height: 289px;
+            right: -100px;
+            bottom: -100px;
+        }
+
+        h3{
+            font-weight: 800;
+            margin: 0;
+            font-size: 22px;
+        }
+
+        ul{
+            text-transform: capitalize;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li{
+                font-size: 22px;
+            }
+        }
     }
 }
 
-footer .divProjet, footer .divApplication, footer .divLiens{
-    float: left;
-    margin: 33px 33px 0 0;
-}
+/* DESKTOP */
+@media screen and (min-width:1024px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 81px 107px;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        height: 370px;
+        overflow: hidden;
+        align-items: center;
 
-footer .divLiens{
-    margin-bottom: 33px;
-}
+        .circle1{
+            position: absolute;
+            top: -150px;
+            left: -80px;
+        }
 
-footer .divLiens a{
-    text-decoration: none;
-    color: #E82C8D;
-}
+        .logoDiv{
+            width: 200px;
 
-footer .circle2{
-    position: absolute;
-    transform: rotate(180deg);
-    width: 289px;
-    height: 289px;
-    right: -100px;
-    bottom: -100px;
-}
+            .logo{
+                width: 100%;
+            }
+        }
 
-footer h3{
-    font-weight: 800;
-    margin: 0;
-    font-size: 22px;
-}
+        .downloadButtonDiv{
+            button{
+                height: 102px;
+                width: 314px;
+                border: none;
+                border-radius: 30px;
+                color: white;
+                background-color: #E82C8D;
+                font-weight: 600;
+                font-size: 30px;
+                padding: 30px 8px;
+                text-transform: uppercase;
+            }
+        }
 
-footer ul{
-    text-transform: capitalize;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+        .divProjet, .divApplication, .divLiens{
+            color: #E82C8D;
 
-footer ul li{
-    font-size: 22px;
+            h3{
+                font-weight: 700;
+                font-size: 24px;
+                margin: 0 0 24px 0;
+            }
+
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                a{
+                    text-decoration: none;
+                    color: #E82C8D;
+                }
+            }
+        }
+
+        .circle2{
+            position: absolute;
+            right: 0;
+            bottom: -200px;
+            transform: rotate(180deg);
+        }
+    }
 }
