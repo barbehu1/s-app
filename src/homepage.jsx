@@ -106,7 +106,7 @@ function HomepageDesktop() {
                     <div className="part1Right">
                         <h3>Des vêtements pour <br />chaque temps</h3>
                         <p>Soleil, pluie ou vent ?<br />Je me sappe tout le temps</p>
-                        <img src={illustration2} alt="Flèche d'illustration" />
+                        <img src={illustration2} className="illustration2" alt="Flèche d'illustration" />
                     </div>
                 </div>
                 <img className="cercleIllustration1" src={cercle} alt="Cercle d'illustration"/>
@@ -117,20 +117,22 @@ function HomepageDesktop() {
                     </div>
                     <div className="part2Right">
                         <img src={mockup3} alt="Votre dressing"/>
+                        <img className="secondeIllustrationFleche" src={illustration1} alt="Seconde illustration de flèche"/>
                     </div>
                 </div>
-                <img className="secondeIllustrationFleche" src={illustration1} alt="Seconde illustration de flèche"/>
                 <img className="cercleIllustration2" src={cercle} alt="Cercle d'illustration"/>
                 <div className="part3">
-                    <img src={mockup4} alt="Prenez vos vêtements en photo"/>
-                    <h3>S'APP arrive prochainement</h3>
-                    <p>Envie de gagner du temps ?<br />Découvrez notre application très prochainement</p>
-                    <form action="" method="post">
-                        <input type="email" name="email" placeholder="ton@mail.com"/>
-                        <button type="submit">
-                            <img src={sendIcon} alt="Icone d'envoi"/>
-                        </button>
-                    </form>
+                    <div className="part3intern">
+                        <img src={mockup4} alt="Prenez vos vêtements en photo"/>
+                        <h3>S'APP arrive prochainement</h3>
+                        <p>Envie de gagner du temps ?<br />Découvrez notre application très prochainement</p>
+                        <form action="" method="post">
+                            <input type="email" name="email" placeholder="ton@mail.com"/>
+                            <button type="submit">
+                                <img src={sendIcon} alt="Icone d'envoi"/>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </>

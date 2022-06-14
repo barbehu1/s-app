@@ -326,13 +326,139 @@ html, body {
                 h3{
                     font-size: 47px;
                     font-weight: 900;
-                    margin: 0;
+                    margin: 0 0 18px 0;
                 }
 
                 p{
                     font-size: 30px;
                     font-weight: 500;
                     margin: 0;
+                }
+
+                .illustration2{
+                    position: relative;
+                    left: -200px;
+                    margin-top: 50px;
+                }
+            }
+        }
+
+        .cercleIllustration1{
+            position: absolute;
+            z-index: -1;
+        }
+
+        .part2{
+            padding: 10px 17% 0 17%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+            color: black;
+
+            .part2Left{
+                max-width: 48%;
+                box-sizing: border-box;
+                margin-top: 155px;
+
+                h3{
+                    font-size: 47px;
+                    font-weight: 900;
+                    margin: 0 0 18px 0;
+                }
+
+                p{
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin: 0;
+                }
+            }
+
+            .part2Right{
+                max-width: 45%;
+                box-sizing: border-box;
+
+                .mockup2{
+                    width: 100%;
+                }
+
+                .secondeIllustrationFleche{
+                    position: relative;
+                    left: -150px;
+                }
+            }
+        }
+
+        .cercleIllustration2{
+            position: absolute;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+        .part3{
+            background-color: #E82C8D;
+            color: white;
+            width: 200%;
+            transform: translate(-25%);
+            border-radius: 50% 50% 0 0;
+            margin-top: 380px;
+            text-align: center;
+            height: 1150px;
+
+            .part3intern{
+                width: 100vw;
+                position: relative;
+                left: 25%;
+                padding: 0 30px;
+                box-sizing: border-box;
+                text-align: left;
+                top: -370px;
+                text-align: center;
+
+                h3{
+                    font-size: 64px;
+                    font-weight: 900;
+                    margin: 0 0 11px 0;
+                }
+
+                p{
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+
+                form{
+                    margin-top: 69px;
+                    height: 102px;
+
+                    input{
+                        width: 496px;
+                        height: 102px;
+                        border-radius: 30px;
+                        background-color: #fff;
+                        border: none;
+                        padding: 5px 25px;
+                        font-family: 'Nunito', sans-serif;
+                        font-size: 30px;
+                        font-weight: 500;
+                        box-sizing: border-box;
+
+                        &::placeholder{
+                            font-family: 'Nunito', sans-serif;
+                            font-size: 30px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    button{
+                        height: 78px;
+                        width: 78px;
+                        background-color: #fff;
+                        border-radius: 50px;
+                        border: none;
+                        margin-left: 35px;
+                        position: relative;
+                        top: 7px;
+                    }
                 }
             }
         }
