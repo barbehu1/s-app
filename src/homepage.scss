@@ -6,194 +6,333 @@ html, body {
     overflow-x: hidden;
 }
 
-/* SECTION 1 */
-.section1{
-    width: 100%;
-    background-image: url("images/background-accroche.jpg");
-    background-size: cover;
-    color: #FAFAFA;
-
-    .topNav{
+/* MOBILE */
+@media screen and (max-width:1023px){
+    /* SECTION 1 */
+    .section1{
         width: 100%;
-        padding: 43px 49px;
-        box-sizing: border-box;
+        background-image: url("images/background-accroche.jpg");
+        background-size: cover;
+        color: #FAFAFA;
 
-        h2{
-            font-size: 48px;
-            font-weight: 600;
-            float: right;
-            margin: 26px 0 0 0;
+        .topNav{
+            width: 100%;
+            padding: 43px 49px;
+            box-sizing: border-box;
+
+            h2{
+                font-size: 48px;
+                font-weight: 600;
+                float: right;
+                margin: 26px 0 0 0;
+            }
+
+            ul{
+                display: none;
+            }
         }
 
-        ul{
-            display: none;
+        .accroche{
+            width: 100%;
+            padding: 0 30px 41px 30px;
+            box-sizing: border-box;
+
+            > img{
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            h1, h2{
+                margin: 0;
+            }
+
+            h1{
+                font-size: 26px;
+                font-weight: 900;
+                margin-bottom: 9px;
+            }
+
+            h2{
+                font-size: 17px;
+                font-weight: 600;
+                margin-bottom: 9px;
+            }
+
+            .storesIcons{
+                display: flex;
+                justify-content: space-between;
+
+                img{
+                    width: 48%;
+                    box-sizing: border-box;
+                }
+            }
         }
     }
 
-    .accroche{
-        width: 100%;
-        padding: 0 30px 41px 30px;
-        box-sizing: border-box;
+    /* SECTION 2 */
+    .section2{
+        .part1, .part2{
+            padding: 30px;
+        }
 
-        > img{
-            width: 100%;
+        .part1{
+            .mockup2{
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            h3{
+                font-size: 26px;
+                font-weight: 900;
+                margin: 13px 0 0 0;
+            }
+
+            p{
+                font-size: 17px;
+                font-weight: 500;
+                margin: 9px 0 0 0;
+            }
+        }
+
+        .illustration1{
+            width: 30%;
+            margin-left: 35%;
+            margin-right: 35%;
             box-sizing: border-box;
         }
 
-        h1, h2{
-            margin: 0;
-        }
-
-        h1{
-            font-size: 26px;
-            font-weight: 900;
-            margin-bottom: 9px;
-        }
-
-        h2{
-            font-size: 17px;
-            font-weight: 600;
-            margin-bottom: 9px;
-        }
-
-        .storesIcons{
-            display: flex;
-            justify-content: space-between;
-
-            img{
-                width: 48%;
+        .part2{
+            .mockup3{
+                width: 100%;
                 box-sizing: border-box;
+            }
+
+            h3{
+                font-size: 26px;
+                font-weight: 900;
+                margin: 13px 0 0 0; 
+            }
+
+            p{
+                font-size: 17px;
+                font-weight: 500;
+                margin: 9px 0 0 0;
+            }
+        }
+
+        .part3{
+            background-color: #E82C8D;
+            color: white;
+            width: 200%;
+            transform: translate(-25%);
+            border-radius: 600px 600px 0 0;
+            margin-top: 270px;
+            text-align: center;
+            height: 700px;
+
+            .part3intern{
+                width: 100vw;
+                position: relative;
+                left: 25%;
+                padding: 0 30px;
+                box-sizing: border-box;
+                text-align: left;
+                top: -200px;
+
+                .mockup4{
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+        
+                h3{
+                    box-sizing: border-box;
+                    font-size: 36px;
+                    font-weight: 900;
+                    margin: 26px 0 0 0;
+                }
+        
+                p{
+                    font-size: 11px;
+                    font-weight: 500;
+                    margin: 6px 0 0 0;
+                }
+        
+                form{
+                    margin: 22px 0 0 0;
+                    width: 100%;
+                    display: flex;
+        
+                    input{
+                        width: 80%;
+                        border: none;
+                        border-radius: 30px;
+                        height: 40px;
+                        padding: 7px 12px;
+                        box-sizing: border-box;
+                        font-size: 20px;
+                        font-weight: 500;
+
+                        &::placeholder{
+                            font-family: 'Nunito', sans-serif;
+                        }
+                    }
+        
+                    button{
+                        width: 40px;
+                        height: 40px;
+                        border: 0;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                        position: relative;
+                        margin-left: 5px;
+                        background-color: white;
+        
+                        img{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 40%;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-/* SECTION 2 */
-.section2{
-    .part1, .part2{
-        padding: 30px;
-    }
+/* DESKTOP */
+@media screen and (min-width:1024px){
+    .section1Desktop{
+        width: 100%;
+        background-image: url("images/background-accroche.jpg");
+        background-size: cover;
+        color: #FAFAFA;
 
-    .part1{
-        .mockup2{
+        .topNav{
             width: 100%;
             box-sizing: border-box;
-        }
+            padding: 31px 17%;
+            display: flex;
+            justify-content: space-between;
 
-        h3{
-            font-size: 26px;
-            font-weight: 900;
-            margin: 13px 0 0 0;
-        }
-
-        p{
-            font-size: 17px;
-            font-weight: 500;
-            margin: 9px 0 0 0;
-        }
-    }
-
-    .illustration1{
-        width: 30%;
-        margin-left: 35%;
-        margin-right: 35%;
-        box-sizing: border-box;
-    }
-
-    .part2{
-        .mockup3{
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        h3{
-            font-size: 26px;
-            font-weight: 900;
-            margin: 13px 0 0 0; 
-        }
-
-        p{
-            font-size: 17px;
-            font-weight: 500;
-            margin: 9px 0 0 0;
-        }
-    }
-
-    .part3{
-        background-color: #E82C8D;
-        color: white;
-        width: 200%;
-        transform: translate(-25%);
-        border-radius: 600px 600px 0 0;
-        margin-top: 270px;
-        text-align: center;
-        height: 700px;
-
-        .part3intern{
-            width: 100vw;
-            position: relative;
-            left: 25%;
-            padding: 0 30px;
-            box-sizing: border-box;
-            text-align: left;
-            top: -200px;
-
-            .mockup4{
-                width: 100%;
-                box-sizing: border-box;
-            }
-    
-            h3{
-                box-sizing: border-box;
-                font-size: 36px;
-                font-weight: 900;
-                margin: 26px 0 0 0;
-            }
-    
-            p{
-                font-size: 11px;
-                font-weight: 500;
-                margin: 6px 0 0 0;
-            }
-    
-            form{
-                margin: 22px 0 0 0;
-                width: 100%;
+            .navLeft{
                 display: flex;
-    
-                input{
-                    width: 80%;
-                    border: none;
-                    border-radius: 30px;
-                    height: 40px;
-                    padding: 7px 12px;
-                    box-sizing: border-box;
-                    font-size: 20px;
-                    font-weight: 500;
 
-                    &::placeholder{
-                        font-family: 'Nunito', sans-serif;
-                    }
+                img{
+                    margin-right: 38px;
                 }
     
-                button{
-                    width: 40px;
-                    height: 40px;
-                    border: 0;
-                    border-radius: 30px;
-                    padding: 5px;
-                    text-align: center;
-                    position: relative;
-                    margin-left: 5px;
-                    background-color: white;
+                h2{
+                    font-size: 48px;
+                    font-weight: 500;
+                    margin: 26px 0 0 0;
+                }
+            }
+
+            .navRight{
+                ul{
+                    list-style-type: none;
     
-                    img{
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        width: 40%;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-size: 24px;
+                            font-weight: 500;
+                        }
                     }
+                }
+            }
+        }
+
+        .accroche{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 91px 17% 141px 17%;
+            display: flex;
+            justify-content: space-between;
+
+            .accrocheLeft{
+                max-width: 45%;
+                box-sizing: border-box;
+                margin: 183px 0 0 0;
+
+                h1{
+                    font-size: 40px;
+                    font-weight: 900;
+                    margin: 0;
+                }
+
+                h2{
+                    font-size: 27px;
+                    font-weight: 500;
+                    margin: 0;
+                }
+
+                .storesIcons{
+                    width: 100%;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 62px;
+
+                    .googlePlayStoreIcon{
+                        max-width: 48%;
+                    }
+
+                    .appStoreIcon{
+                        max-width: 46%;
+                    }
+                }
+            }
+
+            .accrocheRight{
+                max-width: 42%;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .section2Desktop{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #FFF3F9;
+
+        .part1{
+            padding: 88px 17% 0 17%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+            color: black;
+
+            .part1Left{
+                max-width: 45%;
+                box-sizing: border-box;
+
+                .mockup2{
+                    width: 100%;
+                }
+            }
+
+            .part1Right{
+                max-width: 48%;
+                box-sizing: border-box;
+                margin-top: 105px;
+
+                h3{
+                    font-size: 47px;
+                    font-weight: 900;
+                    margin: 0;
+                }
+
+                p{
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin: 0;
                 }
             }
         }

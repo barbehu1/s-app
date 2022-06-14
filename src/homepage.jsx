@@ -13,6 +13,7 @@ import mockup2 from './images/mockup2.png';
 import fleche from './images/fleche.svg';
 import cercle from './images/circle.svg';
 import mockup3 from './images/mockup3.png';
+import illustration1 from './images/illustration1.svg';
 import illustration2 from './images/illustration2.svg';
 import mockup4 from './images/mockup4.png';
 import sendIcon from './images/send-icon.png';
@@ -71,51 +72,63 @@ function HomepageMobile() {
 function HomepageDesktop() {
     return(
         <>
-            <section class="section1">
-                <nav class="topNav">
-                    <img src="images/logo-s-app.png" alt="S'APP"/>
-                    <h2>S'APP</h2>
-                    <ul>
-                        <li><a href="mailto:hugo.barbe@edu.devinci.fr">CONTACT</a></li>
-                    </ul>
+            <section className="section1Desktop">
+                <nav className="topNav">
+                    <div className="navLeft">
+                        <img src={logoSapp} alt="S'APP"/>
+                        <h2>S'APP</h2>
+                    </div>
+                    <div className="navRight">
+                        <ul>
+                            <li><a href="mailto:hugo.barbe@edu.devinci.fr">CONTACT</a></li>
+                        </ul>
+                    </div>
                 </nav>
-                <div class="accroche">
-                    <img src="images/mockup1.png" alt="Cherchez de nouveaux vêtements"/>
-                    <h1>Organisez facilement votre dressing.</h1>
-                    <h2>S’APP vous propose de nouvelles tenues chaque jours !</h2>
-                    <div class="storesIcons">
-                        <img src="images/google-play.png" class="googlePlayStoreIcon" alt="Google Play Store"/>
-                        <img src="images/app-store.png" class="appStoreIcon" alt="App Store"/>
+                <div className="accroche">
+                    <div className="accrocheLeft">
+                        <h1>Organisez facilement votre dressing.</h1>
+                        <h2>S’APP vous propose de nouvelles tenues chaque jours !</h2>
+                        <div className="storesIcons">
+                            <img src={googlePlay} className="googlePlayStoreIcon" alt="Google Play Store"/>
+                            <img src={appStore} className="appStoreIcon" alt="App Store"/>
+                        </div>
+                    </div>
+                    <div className="accrocheRight">
+                        <img src={mockup1} alt="Cherchez de nouveaux vêtements"/>
                     </div>
                 </div>
             </section>
-            <section class="section2">
-                <div class="part1">
-                    <img src="images/mockup2.png" class="mockup2" alt="Votre tenue d'aujourd'hui"/>
-                    <h3>Des vêtements pour <br />chaque temps</h3>
-                    <p>Soleil, pluie ou vent ?<br />Je me sappe tout le temps</p>
-                    <img class="illustration1" src="images/illustration2.svg" alt="Flèche d'illustration1"/>
+            <section className="section2Desktop">
+                <div className="part1">
+                    <div className="part1Left">
+                        <img src={mockup2} className="mockup2" alt="Votre tenue d'aujourd'hui"/>
+                    </div>
+                    <div className="part1Right">
+                        <h3>Des vêtements pour <br />chaque temps</h3>
+                        <p>Soleil, pluie ou vent ?<br />Je me sappe tout le temps</p>
+                        <img src={illustration2} alt="Flèche d'illustration" />
+                    </div>
                 </div>
-                <img class="cercleIllustration1" src="images/circle.svg" alt="Cercle d'illustration"/>
-                <div class="part2">
-                    <div class="part2Left">
+                <img className="cercleIllustration1" src={cercle} alt="Cercle d'illustration"/>
+                <div className="part2">
+                    <div className="part2Left">
                         <h3>Retrouvez tous vos <br />vêtements dans <br />votre dressing</h3>
                         <p>Ajouter, catégoriser et trier vos <br />vêtements afin de créer de <br />nouvelles tenues</p>
                     </div>
-                    <div class="part2Right">
-                        <img src="images/mockup3.png" alt="Votre dressing"/>
+                    <div className="part2Right">
+                        <img src={mockup3} alt="Votre dressing"/>
                     </div>
                 </div>
-                <img class="secondeIllustrationFleche" src="images/illustration2.svg" alt="Seconde illustration de flèche"/>
-                <img class="cercleIllustration2" src="images/circle.svg" alt="Cercle d'illustration"/>
-                <div class="part3">
-                    <img src="images/mockup4.png" alt="Prenez vos vêtements en photo"/>
+                <img className="secondeIllustrationFleche" src={illustration1} alt="Seconde illustration de flèche"/>
+                <img className="cercleIllustration2" src={cercle} alt="Cercle d'illustration"/>
+                <div className="part3">
+                    <img src={mockup4} alt="Prenez vos vêtements en photo"/>
                     <h3>S'APP arrive prochainement</h3>
                     <p>Envie de gagner du temps ?<br />Découvrez notre application très prochainement</p>
                     <form action="" method="post">
                         <input type="email" name="email" placeholder="ton@mail.com"/>
                         <button type="submit">
-                            <img src="images/send-icon.png" alt="Icone d'envoi"/>
+                            <img src={sendIcon} alt="Icone d'envoi"/>
                         </button>
                     </form>
                 </div>
