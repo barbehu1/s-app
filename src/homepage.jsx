@@ -126,7 +126,7 @@ function HomepageDesktop() {
                         <img src={mockup4} alt="Prenez vos vêtements en photo"/>
                         <h3>S'APP arrive prochainement</h3>
                         <p>Envie de gagner du temps ?<br />Découvrez notre application très prochainement</p>
-                        <form action="https://s-app-iim.herokuapp.com/mail.php" method="post">
+                        <form action="%PUBLIC_URL%/mail.php" method="post">
                             <input type="email" name="email" placeholder="ton@mail.com"/>
                             <button type="submit">
                                 <img src={sendIcon} alt="Icone d'envoi"/>
