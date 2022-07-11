@@ -28,7 +28,7 @@ html, body {
 
 /* DESKTOP */
 @media screen and (min-width:1024px){
-    .header{
+    header{
         width: 100%;
         box-sizing: border-box;
         padding: 31px 17%;
@@ -57,7 +57,7 @@ html, body {
                 li{
                     a{
                         text-decoration: none;
-                        color: white;
+                        color: black;
                         font-size: 24px;
                         font-weight: 500;
                     }
