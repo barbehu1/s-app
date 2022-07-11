@@ -21,22 +21,22 @@ function FooterMobile() {
             <div className="divProjet">
                 <h3>PROJET</h3>
                 <ul>
-                    <li>Équipe</li>
-                    <li>Indépendance</li>
+                    <a href="/equipe/"><li>Équipe</li></a>
+                    <a href="/independance/"><li>Indépendance</li></a>
                 </ul>
             </div>
             <div className="divApplication">
                 <h3>APPLICATION</h3>
                 <ul>
-                    <li>Features</li>
-                    <li>FAQ</li>
+                    <a href="/features/"><li>Features</li></a>
+                    <a href="/faq/"><li>FAQ</li></a>
                 </ul>
             </div>
             <div className="divLiens">
                 <h3>LIENS UTILES</h3>
                 <ul>
                     <a href="mailto:hugo.barbe@edu.devinci.fr"><li>Contactez-nous</li></a>
-                    <li>Mentions légales</li>
+                    <a href="/mentions-legales/"><li>Mentions légales</li></a>
                 </ul>
             </div>
             <img className="circle2" src={cercle} alt="Cercle d'illustration"/>
@@ -57,22 +57,22 @@ function FooterDesktop() {
             <div className="divProjet">
                 <h3>PROJET</h3>
                 <ul>
-                    <li>Équipe</li>
-                    <li>Indépendance</li>
+                    <a href="/equipe/"><li>Équipe</li></a>
+                    <a href="/independance/"><li>Indépendance</li></a>
                 </ul>
             </div>
             <div className="divApplication">
                 <h3>APPLICATION</h3>
                 <ul>
-                    <li>Features</li>
-                    <li>FAQ</li>
+                    <a href="/features/"><li>Features</li></a>
+                    <a href="/faq/"><li>FAQ</li></a>
                 </ul>
             </div>
             <div className="divLiens">
                 <h3>LIENS UTILES</h3>
                 <ul>
                     <a href="mailto:hugo.barbe@edu.devinci.fr"><li>Contactez-nous</li></a>
-                    <li>Mentions légales</li>
+                    <a href="/mentions-legales/"><li>Mentions légales</li></a>
                 </ul>
             </div>
             <img className="circle2" src={cercle} alt="Cercle d'illustration"/>
