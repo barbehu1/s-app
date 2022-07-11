@@ -4,6 +4,9 @@ import './homepage.scss';
 // Modules
 import {useMediaQuery} from '@react-hook/media-query';
 
+// Sections
+import Footer from './footer';
+
 // Images
 import logoSapp from './images/logo-s-app.png';
 import mockup1 from './images/mockup1.png';
@@ -143,10 +146,10 @@ function Homepage() {
     const matches = useMediaQuery('only screen and (min-width: 1024px)');
 
     return (
-        !matches ?
-            <HomepageMobile />
+        !matches ? 
+            <><HomepageMobile /><Footer /></>
         :
-            <HomepageDesktop />
+            <><HomepageDesktop /><Footer /></>
     )
 }
 
